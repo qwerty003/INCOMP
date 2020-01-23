@@ -1,0 +1,94 @@
+.header{
+    display:block;
+	background:white;
+	text-align:center;
+    width:100%;
+	height:160px;
+}
+
+.left{
+	display:block;
+	float:left;
+    background-image:linear-gradient(gray,white); 
+	width:24%;
+	text-align:center;
+	border:2px;
+}
+
+.right{
+	display:block;
+    background-image:linear-gradient(gray,white); 
+	float:right;
+	width:24%;
+	text-align:center;
+	border:2px;
+}
+
+.middle {
+	display:block;
+	float:left;
+	background:white;
+	width:50%;
+	padding:5px;
+	text-align:center;
+	
+}
+
+.image{
+	border-radius:1000px;
+	height:180px;
+	width:180px;
+}
+
+
+.textfield{
+	height : 40px;
+	width : 270px;
+	margin:5px;
+	border-width:1px;
+	border-color:black;
+}
+
+#s1{
+	height:30px;
+	width:30%;
+	background:black;
+	border:none;
+    color:white;	
+}
+
+.register{
+	height:40px;
+	width:200px;
+	background:rgb(200,0,50);
+	border:none;
+    color:white;	
+}
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+	

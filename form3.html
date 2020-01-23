@@ -1,0 +1,66 @@
+<html>
+<head>
+<link rel = "stylesheet" type = "text/css" href = "form.css" />
+<title>
+Update profile
+</title>
+</head>
+<body>
+<form action = "form3.php" method = "POST">
+<h1> Update Profile </h1><br><br>
+
+
+
+<div class = "title">
+Personal details 
+</div>
+<br>
+
+<div class = "main">
+
+Gender : <input type = "radio" name = "personal_r1" value = "M"/>Male <input type = "radio" name = "personal_r2" value = "F"/>Female<br><br> 
+College : <input type = "password" name = "personal_t4"/>
+Degree : <input type = "password" name = "personal_t5"/><br><br>  
+DOB : <input type = "text" name = "personal_t6"/><br><br>
+Country:  <select name = "country"><option value = "india">India<option value = "france">France</select><br><br>
+State : <select name = "state"><option value = "bihar">Bihar<option value = "delhi">Delhi</select><br><br><br>
+</div>
+
+<br><br>
+
+<div class = "title">
+Professional details 
+</div>
+<br>
+
+<div class = "main">
+OrganisationID :<input type = "text" name = "professional_t1"/><br><br>
+Department* :  <input type = "text" name = "professional_t2"/><br><br>
+Designation* : <input type = "text" name = "professional_t3"/><br><br> 
+DOJ : <input type = "text" name = "professional_t4"/><br><br>
+Tenure : <input type = "text" name = "professional_t5"/><br><br><br>
+</div>
+
+<br><br>
+
+<div class = "title">
+Contact details 
+</div>
+<br>
+
+<div class = "main">
+Phone # :<input type = "text" name = "contact_t1"/><br><br>
+Address : <input type = "text" name = "contact_t2"/><br><br>
+Website : <input type = "text" name = "contact_t3"/><br><br> 
+Linkedin link : <input type = "text" name = "contact_t4"/><br><br>
+Github link :  <input type = "text" name = "contact_t5"/><br><br><br>
+</div>
+<br> <br>
+
+<center>
+<input type = "submit" name = "s2" value = "UPDATE"/>
+</center>
+
+</form>
+</body>
+</html>
