@@ -28,7 +28,6 @@ include('main_left.php');
 			echo '</br>';
 		
 		}
-		echo "user is : ".$_SESSION["user"].".";
 
 		
 	}

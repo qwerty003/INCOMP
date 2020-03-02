@@ -84,11 +84,35 @@ else
 
 <div class = "center">
   <div class = "card">
-  <i class="material-icons edit" style = "color:rgb(200,0,50);">cloud</i>
+  <div class = "dp"></div>
+  <i class="material-icons edit" style = "color:rgb(200,0,50);margin-left:470px;;">cloud</i>
   <i class="material-icons edit">mail</i>
   <i class="material-icons edit"> add</i>
+  <?php
+    $squery0 ="select * from login where uname = '".$user."'";
+	$result0 = mysql_query($squery0)or die(mysql_error());
+	$row0=mysql_fetch_array($result0);
+	$fname = $row0['fname'];
+	$lname = $row0['lname'];
+	echo '<h1>'.$fname.' '.$lname.'</h1>';
+	echo '<h3>'.$row0['uname'].' |  Male</h1>';
+  ?>
+  
+  <br>
   <a href ="form3.php"> Edit profile </a>
-  <?php echo "user is : ".$_SESSION["user"]."."; ?>
+  <br>
+  <hr><br>
+  <h2>Professional Details</h2>
+   <?php
+    $squery0 ="select * from professional where uname = '".$user."'";
+	$result0 = mysql_query($squery0)or die(mysql_error());
+	$row0=mysql_fetch_array($result0);
+	echo '<p> Department : '.$row0['dept'].'</p>';
+	echo '<p> Designation : '.$row0['desn'].'</p>';
+	echo '<p> Tenure  :  '.$row0['tenure'].'</p>';
+	echo '<p> Joined  :  '.$row0['doj'].'</p>';
+  ?>
+  
 	
   
   </div>

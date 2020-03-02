@@ -3,7 +3,6 @@
 <div class = "center">
   <div class = "card">
   <?php
-  echo "user is : ".$_SESSION["user"].".";
   if(isset($_GET['cc']))
   {
   $cc = $_GET['cc'];

@@ -134,6 +134,8 @@
 	border:1px solid;
 	box-shadow: 8px 8px 4px gray;
 	font-size:15;
+	padding-top:50px;
+	padding-left:10px;
 }
 
 .dp{
@@ -142,7 +144,8 @@
 	height:120px;
 	width:120px;
 	background-color:black;
-	
+	margin-top:40px;
+	margin-right:10px;
 }
 	
 	

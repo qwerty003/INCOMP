@@ -33,11 +33,10 @@ include('main_top.php');
 <div class = "center">
   <div class = "card">
   
-  <?php echo "user is : ".$_SESSION["user"].".";
+  <?php
   
   
   $mailid = $_GET['mailid'];
-  echo("$mailid");
   mysql_connect("localhost","root","") or die(mysql_error()); 
   mysql_select_db("ss") or die(mysql_error("Unable to Connect to Database"));
   $squery="select sender,reciever,subject,body,date from mail where mailID ='".$mailid."'";

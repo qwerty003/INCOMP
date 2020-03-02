@@ -1,71 +1,101 @@
-.header{
-    display:block;
-	background:white;
-	text-align:center;
-    width:100%;
-	height:160px;
-}
-
-.left{
-	display:block;
-	float:left;
-    background-image:linear-gradient(gray,white); 
-	width:24%;
-	text-align:center;
-	border:2px;
-}
-
-.right{
-	display:block;
-    background-image:linear-gradient(gray,white); 
-	float:right;
-	width:24%;
-	text-align:center;
-	border:2px;
-}
-
-.middle {
-	display:block;
-	float:left;
-	background:white;
-	width:50%;
-	padding:5px;
-	text-align:center;
+.grid-container{
+	display:grid;
+	background-color:rgb(240,75,75);
+	grid-row-gap : 10px;
+	grid-template-areas: 
+	  'header header header header header'
+	  ' . main main main . '
+	  ' . main main main . '
+	  ' . main main main . '
+      ' . . . . .';	  
 	
 }
 
-.image{
-	border-radius:1000px;
-	height:180px;
-	width:180px;
+.header{
+	grid-area:header;
+	background-image:url("header3.jpg");
+	height:400px;
+	color:white;
+	text-align:center;
 }
 
+#s1{
+	height:40px;
+	width:300px;
+    background:rgb(0,0,0,0.5);
+	border:none;
+    color:white;
+    margin-top:150px;
+}
 
 .textfield{
-	height : 40px;
-	width : 270px;
+	height : 6%;
+	width : 80%;
 	margin:5px;
 	border-width:1px;
 	border-color:black;
 }
 
-#s1{
-	height:30px;
-	width:30%;
-	background:black;
-	border:none;
-    color:white;	
-}
-
-.register{
+#s2{
 	height:40px;
 	width:200px;
-	background:rgb(200,0,50);
+    background:black;
 	border:none;
-    color:white;	
+    color:white;
 }
-	
-	
+
+
+.main{
+	grid-area:main;
+	height:800px;
+	margin:30px;
+	background-color:rgb(255,125,125);
+	color:white;
+	text-align:center;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.mimg{
+	display:block;
+	float:left;
+	background-image:url("images/hcol.jpg");
+	background-repeat:repeat-y;
+	width:35%;
+	height:770px;
+	color:black;
+	text-align:center;
+	padding-top:30px;
+}
+.mcontent{
+	display:block;
+	float:left;
+	width:60%;
+	height:800px;
+	background-color:rgb(255,125,125);
+	text-align:center;
+}
+
+.mcontent > p.organise{
+	line-height:0;
+	text-align:left;
+	color:black;
+	font-family: sans-serif;
+	font-size:8vw;
+}
+
+.mcontent > p.interact{
+	line-height:0.2;
+	text-align:center;
+	color:white;
+	font-family: sans-serif;
+	font-size:6vw;
+}
+
+.text{
+	text-align:center;
+	color:black;
+	font-family: cursive;
+	font-size:1.3vw;
+}
 
 
 
@@ -75,20 +105,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	 
-	

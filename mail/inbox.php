@@ -11,7 +11,7 @@
         while($row1=mysql_fetch_array($mails))
 		{
 			echo '<div class = "sresult">';
-			echo '<a class = "subtext-head" href = "mailview.php?mailID=' .$row1['mailid']. '"> '.$row1['subject']. '</a>&nbsp;';
+			echo '<a class = "subtext-head" href = "mailview.php?mailid=' .$row1['mailid']. '"> '.$row1['subject']. '</a>&nbsp;';
 			echo '<p class = "subtext">'.$row1['sender'].'</p>';
 			echo '<p class = "subtext">'.$row1['date'].'</p>';
 			echo '</div>';
